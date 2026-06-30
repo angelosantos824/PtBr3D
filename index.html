@@ -7,55 +7,43 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <header class="hero" id="inicio">
-    <nav class="navbar">
-      <a href="#inicio" class="brand">
+    <nav class="navbar" aria-label="Navegação principal">
+      <a href="#inicio" class="brand" aria-label="PTBR3D">
         <img src="assets/ptbr3d-logo.png" alt="Logo PTBR3D" />
       </a>
 
       <div class="nav-links">
-        <a href="#inicio">Início</a>
         <a href="#servicos">Serviços</a>
-        <a href="#como-funciona">Como Funciona</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#sobre">Sobre</a>
+        <a href="#loja">Loja</a>
+        <a href="#processo">Processo</a>
         <a href="#contacto">Contacto</a>
       </div>
 
-      <a href="https://instagram.com/ptbr3d" target="_blank" class="btn nav-btn">
-        Pedir Orçamento
-      </a>
+      <a href="#pedido" class="btn nav-btn">Pedir agora</a>
     </nav>
 
     <section class="hero-content">
       <div class="hero-text">
-        <p class="tag">Impressão 3D Personalizada</p>
+        <p class="tag">Impressão 3D personalizada</p>
 
-        <h1>
-          Transformamos ideias em
-          <span>peças reais.</span>
-        </h1>
+        <h1>Peças 3D feitas à medida, com acabamento profissional.</h1>
 
         <p class="subtitle">
-          Prototipagem, peças técnicas, decoração, brindes e acessórios
-          personalizados com qualidade, precisão e atenção a cada detalhe.
+          Criamos protótipos, suportes, brindes, decoração e peças técnicas
+          para ideias pessoais, negócios e projetos criativos.
         </p>
 
         <div class="actions">
-          <a href="https://instagram.com/ptbr3d" target="_blank" class="btn primary">
-            Pedir Orçamento no Instagram
-          </a>
-
-          <a href="#projetos" class="btn secondary">
-            Ver Projetos →
-          </a>
+          <a href="#loja" class="btn primary">Ver produtos</a>
+          <a href="#pedido" class="btn secondary">Fazer pedido</a>
         </div>
 
-        <p class="instagram">
-          Siga-nos no Instagram:
-          <a href="https://instagram.com/ptbr3d" target="_blank">@ptbr3d</a>
-        </p>
+        <div class="hero-stats" aria-label="Destaques PTBR3D">
+          <span><strong>3D</strong> sob medida</span>
+          <span><strong>PLA/PETG</strong> e cores</span>
+          <span><strong>PT + BR</strong> = Criatividade</span>
+        </div>
       </div>
 
       <div class="hero-image">
@@ -65,102 +53,182 @@
   </header>
 
   <main>
-
     <section id="servicos" class="section services">
       <div class="section-title">
-        <p class="tag">O que podemos fazer</p>
-        <h2>Serviços que criam <span>soluções.</span></h2>
+        <p class="tag">O que fazemos</p>
+        <h2>Serviços para transformar ficheiros e ideias em objetos reais.</h2>
       </div>
 
       <div class="cards">
         <article class="card">
-          <div class="icon">⚙️</div>
+          <span class="icon" aria-hidden="true">⚙</span>
           <h3>Prototipagem</h3>
-          <p>Modelos rápidos para testar ideias, produtos e conceitos.</p>
+          <p>Modelos rápidos para validar medidas, encaixes e conceitos.</p>
         </article>
 
         <article class="card">
-          <div class="icon">🎁</div>
-          <h3>Brindes Personalizados</h3>
+          <span class="icon" aria-hidden="true">★</span>
+          <h3>Brindes personalizados</h3>
           <p>Peças únicas para marcas, eventos, presentes e lembranças.</p>
         </article>
 
         <article class="card">
-          <div class="icon">🏠</div>
-          <h3>Decoração e Organização</h3>
-          <p>Itens funcionais e decorativos para o dia a dia.</p>
+          <span class="icon" aria-hidden="true">⌂</span>
+          <h3>Casa e organização</h3>
+          <p>Suportes, organizadores e objetos funcionais para o dia a dia.</p>
         </article>
 
         <article class="card">
-          <div class="icon">🔧</div>
-          <h3>Peças Técnicas</h3>
-          <p>Soluções técnicas, peças de reposição e componentes.</p>
-        </article>
-
-        <article class="card">
-          <div class="icon">🎮</div>
-          <h3>Acessórios Gaming</h3>
-          <p>Suportes, acessórios personalizados e peças para setup.</p>
-        </article>
-
-        <article class="card">
-          <div class="icon">🧊</div>
-          <h3>Modelação 3D</h3>
-          <p>Criação ou ajuste de modelos preparados para impressão.</p>
+          <span class="icon" aria-hidden="true">⌘</span>
+          <h3>Peças técnicas</h3>
+          <p>Componentes, reposições e soluções sob medida para projetos.</p>
         </article>
       </div>
     </section>
 
-    <section id="como-funciona" class="section process">
-      <div class="section-title">
-        <p class="tag">Como funciona</p>
-        <h2>Do conceito à realidade em <span>4 passos.</span></h2>
+    <section id="loja" class="section shop">
+      <div class="section-title shop-title">
+        <div>
+          <p class="tag">Lojinha PTBR3D</p>
+          <h2>Produtos de impressão prontos para pedir.</h2>
+        </div>
+        <p>
+          Escolha um modelo, ajuste a quantidade e envie o pedido. A base para
+          comando Xbox já aparece com foto real do produto impresso.
+        </p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card featured-product">
+          <div class="product-photo real-photo">
+            <img src="assets/basexbox.jpeg" alt="Base impressa em 3D para comando Xbox" />
+          </div>
+          <div class="product-info">
+            <p class="product-type">Gaming</p>
+            <h3>Base para comando Xbox</h3>
+            <p>Base impressa em 3D com textura frontal, ideal para organizar e expor o comando.</p>
+            <strong>Desde 8,00 €</strong>
+            </a>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-photo">
+            <img src="assets/dockshow5.webp" alt="Foto de suporte Alexa Echo Show 5" />
+          </div>
+          <div class="product-info">
+            <p class="product-type">Suporte Alexa Echo Show 5</p>
+            <h3>Suporte da Alexa</h3>
+            <p>Modelo de mesa com inclinação para correção do alinhamento de camera.</p>
+            <strong>Desde 5,00 €</strong>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-photo">
+            <img src="assets/chaveiro.jpg" alt="Foto de chaveiro impresso em 3D" />
+          </div>
+          <div class="product-info">
+            <p class="product-type">Personalizado</p>
+            <h3>Chaveiro Personagem</h3>
+            <p>Ideal para lembranças, equipas, eventos e pequenos presentes.</p>
+            <strong>Desde 6,00 €</strong>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-photo">
+            <img src="assets/ciclist.jpg" alt="Foto de organizador impresso em 3D" />
+          </div>
+          <div class="product-info">
+            <p class="product-type">Personalizado</p>
+            <h3>Serie Mini EU - Ciclista</h3>
+            <p>Quem mais tem um mini-eu que é a sua cara. A 
+              personalização nível hard que só a tecnologia nos permite. Nosso kit de ciclismo tá on!</p>
+            <strong>Desde 12,00 €</strong>
+          </div>
+        </article>
+      </div>
+
+      <div id="pedido" class="order-panel">
+        <div class="order-copy">
+          <p class="tag">Área de pedido</p>
+          <h2>Monte o seu pedido</h2>
+          <p>
+            Os valores são uma estimativa inicial. Para peças sob medida,
+            confirmamos preço final, cor, material e prazo antes da produção.
+          </p>
+        </div>
+
+        <form class="order-form">
+          <label>
+            Produto
+            <select id="produto" name="produto">
+              <option value="Base para comando Xbox" data-price="0">Base para comando Xbox - 8,00 €</option>
+              <option value="Suporte de telemóvel" data-price="6.5">Suporte para Alexa ES5 - 5,00 €</option>
+              <option value="Chaveiro com nome" data-price="3">Chaveiro com Personagem - 6,00 €</option>
+              <option value="Organizador de secretária" data-price="12">Kit Mini EU - 12,00 €</option>
+              <option value="Modelo personalizado" data-price="0">Modelo personalizado - sob orçamento</option>
+            </select>
+          </label>
+
+          <label>
+            Modelo ou detalhes
+            <input id="modelo" name="modelo" type="text" placeholder="Ex.: cor preta, nome Ana, medidas..." />
+          </label>
+
+          <label>
+            Quantidade
+            <input id="quantidade" name="quantidade" type="number" min="1" value="1" />
+          </label>
+
+          <div class="total-box">
+            <span>Valor estimado</span>
+            <strong id="valor-total">6,50 €</strong>
+          </div>
+
+          <a id="enviar-pedido" class="btn primary full" href="https://wa.me/351934388938" target="_blank" rel="noopener">
+            Enviar pedido
+          </a>
+        </form>
+      </div>
+    </section>
+
+    <section id="processo" class="section process">
+      <div class="section-title center">
+        <p class="tag">Processo</p>
+        <h2>Do conceito à entrega em quatro passos.</h2>
       </div>
 
       <div class="steps">
         <div class="step">
           <strong>01</strong>
-          <h3>Envie a ideia</h3>
-          <p>Descreva o que precisa ou envie o seu ficheiro 3D.</p>
+          <h3>Pedido</h3>
+          <p>Envie o produto, modelo, quantidade ou ficheiro 3D.</p>
         </div>
 
         <div class="step">
           <strong>02</strong>
-          <h3>Receba o orçamento</h3>
-          <p>Analisamos o projeto e indicamos valor e prazo.</p>
+          <h3>Orçamento</h3>
+          <p>Confirmamos preço, material, cor, acabamento e prazo.</p>
         </div>
 
         <div class="step">
           <strong>03</strong>
           <h3>Produção</h3>
-          <p>A peça é impressa com atenção aos detalhes.</p>
+          <p>A peça é impressa com atenção às medidas e aos detalhes.</p>
         </div>
 
         <div class="step">
           <strong>04</strong>
           <h3>Entrega</h3>
-          <p>Receba a sua peça localmente ou por envio.</p>
+          <p>Combinamos levantamento local ou envio, conforme o pedido.</p>
         </div>
       </div>
+      
     </section>
 
-    <section id="projetos" class="section projects">
-      <div class="section-title center">
-        <p class="tag">Projetos</p>
-        <h2>Ideias que podem sair do papel.</h2>
-      </div>
-
-      <div class="project-grid">
-        <div>Suportes</div>
-        <div>Miniaturas</div>
-        <div>Brindes</div>
-        <div>Peças técnicas</div>
-        <div>Organizadores</div>
-        <div>Acessórios</div>
-      </div>
-    </section>
-
-    <section id="sobre" class="section about">
+    <section class="section about">
       <div>
         <p class="tag">Sobre a PTBR3D</p>
         <h2>Portugal e Brasil unidos pela criatividade 3D.</h2>
@@ -168,39 +236,51 @@
 
       <p>
         A PTBR3D combina tecnologia, personalização e criatividade para criar
-        peças únicas em impressão 3D. Da ideia inicial ao objeto final, cada
-        projeto é desenvolvido com foco em qualidade, precisão e utilidade.
+        peças úteis, bonitas e bem acabadas. Cada projeto é tratado com cuidado,
+        desde a ideia inicial até ao objeto final.
       </p>
     </section>
 
     <section id="contacto" class="section contact">
       <p class="tag">Contacto</p>
-      <h2>Tem uma ideia?</h2>
-      <p>Nós imprimimos.</p>
+      <h2>Tem uma ideia para imprimir?</h2>
+      <p>Fale connosco e transformamos o pedido numa peça real.</p>
 
-      <a href="https://instagram.com/ptbr3d" target="_blank" class="btn primary big">
-        Pedir Orçamento no Instagram
+      <div class="contact-list">
+        <a href="https://instagram.com/ptbr3d" target="_blank" rel="noopener">
+          <span>Instagram</span>
+          <strong>@ptbr3d</strong>
+        </a>
+
+        <a href="tel:+351934388938">
+          <span>Telemóvel</span>
+          <strong>934 388 938</strong>
+        </a>
+
+        <a href="mailto:ptbr3d@gmail.com">
+          <span>Email</span>
+          <strong>ptbr3d@gmail.com</strong>
+        </a>
+      </div>
+
+      <a href="https://wa.me/351934388938?text=Ol%C3%A1%2C%20PTBR3D!%20Quero%20falar%20sobre%20uma%20impress%C3%A3o%203D." target="_blank" rel="noopener" class="btn primary big">
+        Chamar no WhatsApp
       </a>
     </section>
-
   </main>
 
-  <footer>
-    <p>© 2026 PTBR3D — Impressão 3D Personalizada</p>
-
-    <div class="footer-dev">
-
-      Desenvolvido por
-
-      <a href="https://www.dozedev.pt"
-         target="_blank"
-         rel="noopener">
-
-        DOZEDEV.COM
-
-      </a>
-
+  <footer class="site-footer">
+    <div class="footer-project">
+      <strong>PTBR3D</strong>
+      <span>© 2026 - Impressão 3D personalizada</span>
+      <span>@ptbr3d · 934 388 938 · ptbr3d@gmail.com</span>
     </div>
+
+    <a class="footer-dev" href="https://www.dozedev.pt" target="_blank" rel="noopener" aria-label="Site desenvolvido por DozeDev.pt">
+      <span class="dev-label">Site desenvolvido por</span>
+      <span class="dev-brand">DOZEDEV.PT</span>
+      <span class="dev-note">Web design, código e presença digital</span>
+    </a>
   </footer>
 
   <script src="script.js"></script>
